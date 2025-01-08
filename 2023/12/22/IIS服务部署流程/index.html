@@ -16,13 +16,14 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="IIS服务部署流程1安装iis在服务器管理器点击添加角色和功能 ![](.&#x2F;assets&#x2F;屏幕截图 2025-01-07 175711.png) 2.点击下一步勾选Web服务器，【asp，HTTP，安全等全部安装】（先安装iis、后dent-&gt;asp解析问题）  3.安装.net framework，安装成功后进入文件资源管理器 C:\Windows\Microsoft.">
+    <meta name="description" content="IIS服务部署流程1安装iis在服务器管理器点击添加角色和功能  2.点击下一步勾选Web服务器，【asp，HTTP，安全等全部安装】（先安装iis、后dent-&gt;asp解析问题）  3.安装.net framework，安装成功后进入文件资源管理器 C:\Windows\Microsoft.NET\Framework64 分别进入C:\Windows\Microsoft.NET\Frame">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IIS服务部署流程">
 <meta property="og:url" content="http://xth-8484.github.io/2023/12/22/IIS%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Tanphoon&#39;s Blog">
-<meta property="og:description" content="IIS服务部署流程1安装iis在服务器管理器点击添加角色和功能 ![](.&#x2F;assets&#x2F;屏幕截图 2025-01-07 175711.png) 2.点击下一步勾选Web服务器，【asp，HTTP，安全等全部安装】（先安装iis、后dent-&gt;asp解析问题）  3.安装.net framework，安装成功后进入文件资源管理器 C:\Windows\Microsoft.">
+<meta property="og:description" content="IIS服务部署流程1安装iis在服务器管理器点击添加角色和功能  2.点击下一步勾选Web服务器，【asp，HTTP，安全等全部安装】（先安装iis、后dent-&gt;asp解析问题）  3.安装.net framework，安装成功后进入文件资源管理器 C:\Windows\Microsoft.NET\Framework64 分别进入C:\Windows\Microsoft.NET\Frame">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://xth-8484.github.io/assets/image-123.png">
 <meta property="og:image" content="http://xth-8484.github.io/assets/image-20250107175750142.png">
 <meta property="og:image" content="http://xth-8484.github.io/assets/image-20250107175805405.png">
 <meta property="og:image" content="http://xth-8484.github.io/assets/image-20250107175831537.png">
@@ -40,10 +41,10 @@
 <meta property="og:image" content="http://xth-8484.github.io/assets/image-20250107180112624.png">
 <meta property="og:image" content="http://xth-8484.github.io/assets/image-20250107180132096.png">
 <meta property="article:published_time" content="2023-12-22T08:07:16.000Z">
-<meta property="article:modified_time" content="2025-01-08T02:04:13.656Z">
+<meta property="article:modified_time" content="2025-01-08T02:29:33.539Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://xth-8484.github.io/assets/image-20250107175750142.png">
+<meta name="twitter:image" content="http://xth-8484.github.io/assets/image-123.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -266,7 +267,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          834 字
+          786 字
         
       </span>
     
@@ -329,43 +330,43 @@
               <div class="markdown-body">
                 
                 <h1 id="IIS服务部署流程"><a href="#IIS服务部署流程" class="headerlink" title="IIS服务部署流程"></a>IIS服务部署流程</h1><p><strong>1安装iis在服务器管理器点击添加角色和功能</strong></p>
-<p>![](.&#x2F;assets&#x2F;屏幕截图 2025-01-07 175711.png)</p>
+<p><img src="/../assets/image-123.png" srcset="/img/loading.gif" lazyload></p>
 <p>2.点击下一步勾选Web服务器，【asp，HTTP，安全等全部安装】（先安装iis、后dent-&gt;asp解析问题）</p>
-<p><img src="/./assets/image-20250107175750142.png" srcset="/img/loading.gif" lazyload alt="image-20250107175750142"></p>
+<p><img src="/../assets/image-20250107175750142.png" srcset="/img/loading.gif" lazyload alt="image-20250107175750142"></p>
 <p>3.安装.net framework，安装成功后进入文件资源管理器 C:\Windows\Microsoft.NET\Framework64</p>
 <p>分别进入C:\Windows\Microsoft.NET\Framework64\v4.0.30319</p>
 <p>​              C:\Windows\Microsoft.NET\Framework64\v2.0.50727</p>
 <p>在文件夹地址输入cmd，打开cmd窗口 输入aspnet_regiis.exe -i 注册.net</p>
-<p><img src="/./assets/image-20250107175805405.png" srcset="/img/loading.gif" lazyload alt="image-20250107175805405"></p>
+<p><img src="/../assets/image-20250107175805405.png" srcset="/img/loading.gif" lazyload alt="image-20250107175805405"></p>
 <p>4.右键点击添加网站：</p>
-<p><img src="/./assets/image-20250107175831537.png" srcset="/img/loading.gif" lazyload alt="image-20250107175831537"></p>
+<p><img src="/../assets/image-20250107175831537.png" srcset="/img/loading.gif" lazyload alt="image-20250107175831537"></p>
 <p>5.设置网站IP为*，端口为80，修改默认文档为你的index网页首页（注意重启iis和web）</p>
 <p>6.在添加的web网站中 检查ISAPI筛选器中是否添加成功.net、处理程序映射、请求筛选</p>
-<p><img src="/./assets/image-20250107175847326.png" srcset="/img/loading.gif" lazyload alt="image-20250107175847326"></p>
-<p><img src="/./assets/image-20250107175900865.png" srcset="/img/loading.gif" lazyload alt="image-20250107175900865"></p>
+<p><img src="/../assets/image-20250107175847326.png" srcset="/img/loading.gif" lazyload alt="image-20250107175847326"></p>
+<p><img src="/../assets/image-20250107175900865.png" srcset="/img/loading.gif" lazyload alt="image-20250107175900865"></p>
 <p>7.设置阿里云实例安全组的80端口开放（ping测试域名解析ip是否成功，添加安全组入网http80端口）</p>
 <p>8.应用程序池设置：<strong>启用32位应用程序选择True</strong>（特别注意！！！！！！可能会因为32位和64位程序不兼容导致网页出错）</p>
 <p>进程模型中的标识根据你的程序设置选择 ，一般是默认的</p>
-<p><img src="/./assets/image-20250107175923144.png" srcset="/img/loading.gif" lazyload alt="image-20250107175923144"></p>
+<p><img src="/../assets/image-20250107175923144.png" srcset="/img/loading.gif" lazyload alt="image-20250107175923144"></p>
 <p>9.打开高级安全Windows防火墙 新建规则点击端口，下一步选择TCP，特定端口添加80端口</p>
-<p><img src="/./assets/image-20250107175942104.png" srcset="/img/loading.gif" lazyload alt="image-20250107175942104"></p>
-<p><img src="/./assets/image-20250107175954728.png" srcset="/img/loading.gif" lazyload alt="image-20250107175954728"></p>
+<p><img src="/../assets/image-20250107175942104.png" srcset="/img/loading.gif" lazyload alt="image-20250107175942104"></p>
+<p><img src="/../assets/image-20250107175954728.png" srcset="/img/loading.gif" lazyload alt="image-20250107175954728"></p>
 <h1 id="发布FTP站点"><a href="#发布FTP站点" class="headerlink" title="发布FTP站点"></a>发布FTP站点</h1><p>1.打开计算机管理，点击本地用户和组</p>
-<p><img src="/./assets/image-20250107180005008.png" srcset="/img/loading.gif" lazyload alt="image-20250107180005008"></p>
+<p><img src="/../assets/image-20250107180005008.png" srcset="/img/loading.gif" lazyload alt="image-20250107180005008"></p>
 <p>右键添加新用户输入用户名和密码，选择密码永不过期，创建</p>
-<p><img src="/./assets/image-20250107180018339.png" srcset="/img/loading.gif" lazyload alt="image-20250107180018339"></p>
+<p><img src="/../assets/image-20250107180018339.png" srcset="/img/loading.gif" lazyload alt="image-20250107180018339"></p>
 <p>点击组，右键点击新建组，点击添加，高级，立即查找，选择新建的用户，确定，创建</p>
-<p><img src="/./assets/image-20250107180029963.png" srcset="/img/loading.gif" lazyload alt="image-20250107180029963"></p>
+<p><img src="/../assets/image-20250107180029963.png" srcset="/img/loading.gif" lazyload alt="image-20250107180029963"></p>
 <p>返回IIS管理器，右键网站，点击添加FTP站点</p>
-<p><img src="/./assets/image-20250107180040137.png" srcset="/img/loading.gif" lazyload alt="image-20250107180040137"></p>
+<p><img src="/../assets/image-20250107180040137.png" srcset="/img/loading.gif" lazyload alt="image-20250107180040137"></p>
 <p>输入站点名称，物理路径</p>
-<p><img src="/./assets/image-20250107180050453.png" srcset="/img/loading.gif" lazyload alt="image-20250107180050453"></p>
+<p><img src="/../assets/image-20250107180050453.png" srcset="/img/loading.gif" lazyload alt="image-20250107180050453"></p>
 <p>选择默认的21端口、无SSL，下一步</p>
-<p><img src="/./assets/image-20250107180103049.png" srcset="/img/loading.gif" lazyload alt="image-20250107180103049"></p>
+<p><img src="/../assets/image-20250107180103049.png" srcset="/img/loading.gif" lazyload alt="image-20250107180103049"></p>
 <p>勾选匿名和基本，选择指定用户，输入创建的用户名，完成</p>
-<p><img src="/./assets/image-20250107180112624.png" srcset="/img/loading.gif" lazyload alt="image-20250107180112624"></p>
+<p><img src="/../assets/image-20250107180112624.png" srcset="/img/loading.gif" lazyload alt="image-20250107180112624"></p>
 <p>右键创建的FTP站点，编辑权限，将创建的用户添加进去</p>
-<p><img src="/./assets/image-20250107180132096.png" srcset="/img/loading.gif" lazyload alt="image-20250107180121412"></p>
+<p><img src="/../assets/image-20250107180132096.png" srcset="/img/loading.gif" lazyload alt="image-20250107180121412"></p>
 
                 
               </div>
